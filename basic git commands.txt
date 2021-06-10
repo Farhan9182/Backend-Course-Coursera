@@ -1,0 +1,22 @@
+------------------------------ Setting Up Git ------------------------------
+ To confirm/validate git installation : git --version
+ To configure your user name to be used by Git : git config --global user.name "Your GitHub username"
+ To configure your email to be used by Git : git config --global user.email <your email address>
+ You can check your default Git global configuration : git config --list
+
+ ------------------------------ Setup/Manage current directory as Git repo ------------------------------
+Initializing the folder as a Git repository : git init
+Checking your Git repository status : git status
+Adding all files inside current directory to the staging area : git add .
+Commiting to the Git repository : git commit -m "Write your message here"
+Checking the log of Git commits : git log --oneline
+Checking out a file from an earlier commit : git checkout <commit's number> file-name
+Resetting a file in the Git repository to latest commit : git reset HEAD filename
+                                                          git checkout -- index.html
+Resetting complete Git repo to last commit : git reset
+
+ ------------------------------ Setup/Manage current directory as Online Git repo ------------------------------
+Set the local Git repository to set its remote origin : git remote add origin <repository URL>
+
+Setting up the Git repo branch for push/pull : git branch --set-upstream-to=origin/branch-name master
+Pushing your commits to the online repository : git push -u origin master
