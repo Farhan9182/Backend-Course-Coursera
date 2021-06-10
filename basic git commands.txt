@@ -16,7 +16,8 @@ Resetting a file in the Git repository to latest commit : git reset HEAD filenam
 Resetting complete Git repo to last commit : git reset
 
  ------------------------------ Setup/Manage current directory as Online Git repo ------------------------------
-Set the local Git repository to set its remote origin : git remote add origin <repository URL>
-
+Set the local Git repository to set its remote origin : git remote add origin repository-URL
 Setting up the Git repo branch for push/pull : git branch --set-upstream-to=origin/branch-name master
 Pushing your commits to the online repository : git push -u origin master
+Pulling files from your online repo : git pull repo-URL branch-name 
+Cloning an online repository : git clone repository-URL
