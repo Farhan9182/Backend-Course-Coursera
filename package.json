@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Farhan9182/Backend-Course-Coursera/issues"
   },
-  "homepage": "https://github.com/Farhan9182/Backend-Course-Coursera#readme"
+  "homepage": "https://github.com/Farhan9182/Backend-Course-Coursera#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
