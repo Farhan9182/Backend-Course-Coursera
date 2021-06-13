@@ -1,3 +1,4 @@
 First class functions: Functions treated as variables
 Closure: A function defined inside another function has access to all the variables defined in outer function even when the outer function has returned.
 Event loop: A loop running continously picks up requests one after the other in the queue.
+Postman tool: To help build http requests, including headers for requests as well as response.
