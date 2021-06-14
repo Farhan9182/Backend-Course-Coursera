@@ -1,12 +1,25 @@
+const bodyParser = require('body-parser');
 const express = require('express');
 const http = require('http');
 const morgan = require('morgan');
+
 
 const hostname = 'localhost';
 const port = 3000;
 
 const app = express();
 app.use(morgan('dev'));
+app.use(bodyParser.json());
+
+app.all('/dishes',(req,res,next) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type','text/plain');
+    next();
+});
+
+app.get('/dishes', (req,res,next) => {
+    res.end('Will send all the dishes to you.');
+});
 
 app.use(express.static(__dirname + '/public'));
 
